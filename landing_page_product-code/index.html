@@ -1,1 +1,147 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de Producto</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="page-wrapper">  <!--Contenedor principal que agrupa todo el contenido de la página-->
+                              <!--Puede servir para aplicar estilos globales: ancho máximo, márgenes automáticos para centrar página, fondo común...-->
+                              <!--Puede servirme en esta página para añadir estilos como max-width: 1200px; margin: auto;-->
+      <header id="header">
+        <img id="header-img" src="https://raw.githubusercontent.com/Zafonote/imagenes/0955e34717a5a93c18c7d12959de88dd2ac0e2d9/abanicoespanol.png" alt="logo" width="300px">
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#caracteristicas">Características</a></li>
+            <li><a class="nav-link" href="#demostracion">Video demostrativo</a></li>
+            <li><a class="nav-link" href="#precios">Precios</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <div class="separar"></div>
+
+      <section id="artesania">
+        <h2>Abanicos hechos a mano, verdaderas obras de arte</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" name="email" type="email" placeholder="Aquí tu mail porfa..." required="">
+          <input id="submit" class="btn" type="submit" value="¡Vamos!">
+        </form> 
+      </section>     
+
+      <div class="container">     <!--Contenedor de las 3 secciones relacionadas con la descripción del producto-->
+                                  <!--Puedo usarlo para aplicar un diseño en columnas o en grid, obteniendo un layout más estructurado-->
+                                  <!--Puedo usarlo para definir un ancho máximo y que el contenido no se expanda demasiado en pantallas grandes-->
+                                  <!--Puedo usarlo para añadir espaciado entre las secciones-->
+
+        
+        <section id="caracteristicas">
+            <h3>Características</h3>
+            <p>Así son nuestros abanicos...</p>
+
+          <div class="features">
+
+            <div class="materiales">
+              <div class="texto">
+                <h4>Materiales de primerísima calidad</h4>
+                <p>Todos nuestros abanicos se fabrican en madera, como <br>se han hecho siempre</p>
+              </div>
+              <div class="imagen">
+                <img src="https://github.com/Zafonote/imagenes/blob/main/foto_materiales.jpg?raw=true" alt="foto materiales" width="150px">
+              </div>
+            </div>
+        
+            <div class="fabricacion">
+              <div class="texto">
+                <h4>Fabricación tradicional</h4>
+                <p>Fabricados a mano por artesanos que aman su trabajo</p>
+              </div>
+              <div class="imagen">
+                <img src="https://github.com/Zafonote/imagenes/blob/main/foto_artesano.jpg?raw=true" alt="foto de un artesano trabajando" width="150px">
+              </div>
+            </div>
+        
+            <div class="tradicion">
+              <div class="texto">
+                <h4>Tradición</h4>
+                <p>Apasionados por la historia, por no perder nuestras raices</p>
+              </div>
+              <div class="imagen">
+                <img id="tradicion" rel="tradicion" src="https://github.com/Zafonote/imagenes/blob/main/foto_tradicion.jpg?raw=true" alt="tradicion" width="150px">
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <div class="separar"></div>
+
+          <section id="demostracion">
+          <h3></h3>
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/5P-mPQas-no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </section>
+
+
+        <div class="separar_precios"></div>
+          <div class="los_precios">      
+            <section id="precios">
+              <h3>Precios</h3>
+              <p>Información sobre el ridículo precio de nuestros abanicos</p>
+            </section>
+
+            <div class="precio_prod">
+              <div>Abanico básico</div>
+                <h4>25€</h4>
+                <ol>
+                  <li>Nuestra opción más económica</li>
+                  <li>No te defraudara</li>
+                  <li>Si eres un puto rata, es tu abanico</li>
+                </ol>
+                <button class="btn">Dale...</button>
+              </div>
+            
+              <div class="precio_prod">
+              <div>Abanico de batalla</div>
+              <h4>45€</h4>
+              <ol>
+                <li>Para el uso diario</li>
+                <li>Combina estilo y utilidad</li>
+                <li>...sepas que sigues siendo un puto rata</li>
+              </ol>
+              <button class="btn">Dale...</button>
+              </div>
+
+              <div class="precio_prod">
+              <div>Abanico deLuxe</div>
+              <h4>250€</h4>
+              <ol>
+                <li>La joya de la corona</li>
+                <li>Pintados a mano por artistas consagrados</li>
+                <li>...y una mierda, los compro del chino de abajo por 2 o 3€</li>
+              </ol>
+              <button class="btn">Dale...</button>
+              </div>
+
+          
+          </div>
+      </div>  
+      
+      <div class="separar_precios"></div>
+      
+      <footer>
+        <div class="footer-container">
+          <p>&copy; 2025 <strong>JoseCa </strong>Mi Sitio Web de Abanicos</p>
+          <nav>
+            <ul>
+              <li><a href="#">Aviso Legal</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>  
+  </body>
+</html>
