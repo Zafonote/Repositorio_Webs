@@ -1,0 +1,259 @@
+/* Reseteo estilos para que se vea igual en todos los navegadores*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Hace que el tamaño total de un elemento incluya el padding y el borde, evitando que crezca inesperadamente */
+}
+
+/*Damos formato a la estructura principal*/
+
+body {
+  font-family: Arial, sans-serif; /* Define la fuente del texto principal de la página */
+  line-height: 1.6; /* Aumenta la altura de línea para mejorar la legibilidad */
+  background: #F4F4F4; /* Establece un color de fondo gris claro */
+  color: #333333; /* Establece un color de texto oscuro para mejorar el contraste */
+} 
+
+header {
+  display: flex; /*Esto va a cambiar la organizació´de elemntos hijos: logo y nav*/
+                  /*Ahora se alinearan de izquierda a derecha*/
+                  /*Para hijos tendre que utilizar justifycontent y align-items en header*/
+  justify-content: space-between; /* Distribuye los elementos: logo a la izquierda, nav a la derecha */
+  align-items: center; /* Alinea verticalmente el logo y el nav */                
+  background: #1E1E1E; /* Color de fondo oscuro para el encabezado */
+  color: white; /* Color de texto en blanco para contraste */
+  padding: 20px; /* Añade un espacio interno uniforme alrededor del contenido */
+  position: fixed;
+  width: 100%;
+  
+}
+
+/* Estilos de la barra de navegación */
+
+nav {
+  margin-right: 50px; /* Ajusta este valor según lo que necesites */
+}
+
+nav ul {
+  list-style: none; /* Elimina los estilos predeterminados de lista (como los puntos o números) */
+  display: flex; /* Usa flexbox para alinear los elementos de la lista en una fila */
+  justify-content: center; /* Centra los elementos de la lista horizontalmente */
+  gap: 100px; /* Añade un espacio uniforme entre los elementos de la lista */
+  font-size: 1.5rem;
+}
+
+/* Estilos de los enlaces de la navegación */
+nav a {
+  color: white; /* Hace que el texto de los enlaces sea blanco */
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+.separar {
+  height: 250px;
+}
+
+.separar_precios {
+  height: 25px;
+}
+
+/* Estilos seccion artesanía */
+
+#artesania {
+  display: flex;
+  flex-direction:column; /* Con esto consigo que los elementos se alineen uno debajo del otro */
+  
+  align-items: center; /* Alinea verticalmente el logo y el nav */                
+  
+  padding: 20px; /* Añade un espacio interno uniforme alrededor del contenido */
+  
+  
+}
+
+#form {
+  display: flex;
+  flex-direction:column; /* Con esto consigo que los elementos se alineen uno debajo del otro */
+  justify-content:center; /* Distribuye los elementos: logo a la izquierda, nav a la derecha */
+  align-items: center; /* Alinea verticalmente el logo y el nav */                
+  ; /* Color de fondo oscuro para el encabezado */
+  ; /* Color de texto en blanco para contraste */
+  padding: 20px; /* Añade un espacio interno uniforme alrededor del contenido */
+  
+  /* text-align: center; /* Centra el texto dentro del encabezado */ /*Pierde su utilidad cuando
+  en un contenedor flex, sirviendo solo en contenedores en bloque.*/
+  /*En resumen: contenedor en bloque utilizamos text-align */
+  /*            contenedor flex utilizamos justify-content y align-items*/
+}
+
+.btn { 
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #ff5a5f;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: oblique;
+  row-gap: 100px;
+}
+
+#caracteristicas p {
+  margin-bottom: 100px;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+#caracteristicas {
+  scroll-margin-top: 200px; /* Ajusta según la altura de tu header */
+  
+}
+#caracteristicas h3 {
+  display: block;
+  padding: 50px 50px 10px 200px;
+}
+
+#caracteristicas p {
+  display: block;
+  padding: 0px 50px 10px 225px;
+
+}
+
+.materiales {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+}
+
+.imagen {
+  max-width: 100%;
+  height: auto;
+}
+
+.texto {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.fabricacion {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+}
+
+.fabricacion, .imagen {
+  justify-items: flex-end;
+}
+
+.tradicion {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+#demostracion {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding-bottom: 150px;
+  scroll-margin-top: 300px;
+}
+
+#precios {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding-bottom: 50px;
+  
+}
+
+.los_precios {
+  display: flex; /*Esto va a cambiar la organizació´de elemntos hijos: logo y nav*/
+                  /*Ahora se alinearan de izquierda a derecha*/
+                  /*Para hijos tendre que utilizar justifycontent y align-items en header*/
+  justify-content:space-around; /* Distribuye los elementos: logo a la izquierda, nav a la derecha */
+  align-items: center; /* Alinea verticalmente el logo y el nav */                
+  background: #FFFFFF;
+  border: #d1d1d1; /* Color de fondo oscuro para el encabezado */
+  color: #333; /* Color de texto en blanco para contraste */
+  padding: 20px; /* Añade un espacio interno uniforme alrededor del contenido */
+  align-items: right;
+  gap: 10px;  
+  width: 100%;
+}
+
+.precio_prod {
+  color:#333;
+}
+
+.precio_prod ol {
+  list-style: none;
+  
+}
+.precio_prod ol li {
+  
+  
+}
+
+
+/* Estilos del pie de página */
+footer {
+  text-align: center; /* Centra el texto del pie de página */
+  padding: 20px; /* Añade espacio interno alrededor del contenido */
+  background: #333; /* Color de fondo oscuro para diferenciarlo del contenido principal */
+  color: white; /* Color de texto blanco para contraste */
+  margin-top: 20px; /* Añade un espacio entre el contenido principal y el pie de página */
+  font-size: 0.6rem;
+}
+
+footer a {
+  font-size: 0.8rem;
+}
+
+
+
+/* Los media siempre al final del CSS, para sobreescribir los estilos generales en caso necesario */
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Espacio entre elementos */
+    }
+}
