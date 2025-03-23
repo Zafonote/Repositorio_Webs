@@ -1,140 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina de Producto</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>My personal web</title>
   </head>
+
   <body>
-    <div id="page-wrapper">  <!--Contenedor principal que agrupa todo el contenido de la página-->
-                              <!--Puede servir para aplicar estilos globales: ancho máximo, márgenes automáticos para centrar página, fondo común...-->
-                              <!--Puede servirme en esta página para añadir estilos como max-width: 1200px; margin: auto;-->
+    <div class="contenedor_web">
+
       <header id="header">
-        <img id="header-img" src="https://raw.githubusercontent.com/Zafonote/imagenes/0955e34717a5a93c18c7d12959de88dd2ac0e2d9/abanicoespanol.png" alt="logo" width="300px">
-        <nav id="nav-bar">
-          <ul>
-            <li><a class="nav-link" href="#caracteristicas">Características</a></li>
-            <li><a class="nav-link" href="#demostracion">Video demostrativo</a></li>
-            <li><a class="nav-link" href="#precios">Precios</a></li>
-          </ul>
-        </nav>
+                 
+        <div class="logo">            
+            <img class="image_logo" src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Fisiolog%C3%ADa/20170702_0134-94_w_w.jpg?raw=true" alt="logo"><p>JoseCa</p>
+        </div>
+
+        <div class="navbar">
+            <nav id="navbar" class="nav">
+              <ul class="nav-list">
+                <li>
+                  <a href="#welcome-section">Sobre mí</a>
+                </li>
+                <li>
+                  <a href="#projects">Algunos Proyectos</a>
+                </li>
+                <li>
+                  <a href="#contact">Contáctame, o no...</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+        
       </header>
-      
-      <div class="separar"></div>
 
-      <section id="artesania">
-        <h2>Abanicos hechos a mano, verdaderas obras de arte</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input id="email" name="email" type="email" placeholder="Aquí tu mail porfa..." required="">
-          <input id="submit" class="btn" type="submit" value="¡Vamos!">
-        </form> 
-      </section>     
-
-      <div class="container">     <!--Contenedor de las 3 secciones relacionadas con la descripción del producto-->
-                                  <!--Puedo usarlo para aplicar un diseño en columnas o en grid, obteniendo un layout más estructurado-->
-                                  <!--Puedo usarlo para definir un ancho máximo y que el contenido no se expanda demasiado en pantallas grandes-->
-                                  <!--Puedo usarlo para añadir espaciado entre las secciones-->
-
+      <section id="welcome-section" class="welcome-section">
         
-        <section id="caracteristicas">
-            <h3>Características</h3>
-            <p>Así son nuestros abanicos...</p>
-
-          <div class="features">
-
-            <div class="materiales">
-              <div class="texto">
-                <h4>Materiales de primerísima calidad</h4>
-                <p>Todos nuestros abanicos se fabrican en madera, como <br>se han hecho siempre</p>
-              </div>
-              <div class="imagen">
-                <img src="https://github.com/Zafonote/imagenes/blob/main/foto_materiales.jpg?raw=true" alt="foto materiales" width="150px">
-              </div>
-            </div>
-        
-            <div class="fabricacion">
-              <div class="texto">
-                <h4>Fabricación tradicional</h4>
-                <p>Fabricados a mano por artesanos que aman su trabajo</p>
-              </div>
-              <div class="imagen">
-                <img src="https://github.com/Zafonote/imagenes/blob/main/foto_artesano.jpg?raw=true" alt="foto de un artesano trabajando" width="150px">
-              </div>
-            </div>
-        
-            <div class="tradicion">
-              <div class="texto">
-                <h4>Tradición</h4>
-                <p>Apasionados por la historia, por no perder nuestras raices</p>
-              </div>
-              <div class="imagen">
-                <img id="tradicion" rel="tradicion" src="https://github.com/Zafonote/imagenes/blob/main/foto_tradicion.jpg?raw=true" alt="tradicion" width="150px">
-              </div>
-            </div>
-
+        <div class="welcome">
+          <h1>Mi fotografía</h1>
+          <div class="statement">
+            <p>Empiezo con la fotografía buscando un medio de expresión, y pasados los años confieso que ya no
+              puedo evitar hacer fotos, se ha convertido en una necesidad, quizás en una búsqueda de mí mismo a través de
+              imágenes que nacen de mis dudas y temores.<br>
+              Las fotos que tomo me sirven para agarrarme a la realidad, para no perderme en esa inmensidad.<br>
+              Veo el mundo en fotografías: luces y sombras se combinan, los colores se acercan para llamar mi atención y
+              hacerme echar de menos una cámara.<br> Fotografiar eso es lo que quiero, mostrar a los demás lo que siento en esos momentos. Pero lo que me interesa, sobre todo, es el trasfondo, lo que sea que hay detrás de la
+              fotografía y la manera que ésta tiene de representar la realidad. A lo que aspiro es a que mi fotografía sea
+              capaz algún día de hablar de eso.</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <div class="separar"></div>
+      <section id="projects" class="projects-section">
+        
+        <h2>Algunos de mis proyectos</h2>
+        
+        <div class="projects-grid">
+        
+          <div class="grid-item">
+            <a class="project-tile" href="1_danses.html" target="_blank">
+              <img class="project-tile" src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Danses/20170426_0103-33_w.jpg?raw=true" alt="danses">              
+            </a>
+            <p class="project-tile-text">Danses</p>
+          </div>
+        
+          <div class="grid-item">
+            <a class="project-tile" href="#" target="_blank">
+              <img class="project-tile" src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Di%C3%A1logos/Sin%20titulo%207.jpg?raw=true" alt="dialogos">
+            </a>
+            <p class="project-tile-text">Dialogos</p>
+          </div>
 
-          <section id="demostracion">
-          <h3></h3>
-          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/5P-mPQas-no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </section>
+          <div class="grid-item">
+            <a class="project-tile" href="#" target="_blank">
+              <img class="project-tile" src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Fisiolog%C3%ADa/17X23_w.jpg?raw=true" alt="fisiología">
+            </a>
+          <p class="project-tile-text">Fisiología</p>
+          </div>
 
-
-        <div class="separar_precios"></div>
-          <div class="los_precios">      
-            <section id="precios">
-              <h3>Precios</h3>
-              <p>Información sobre el ridículo precio de nuestros abanicos</p>
-            </section>
-
-            <div class="precio_prod">
-              <div>Abanico básico</div>
-                <h4>25€</h4>
-                <ol>
-                  <li>Nuestra opción más económica</li>
-                  <li>No te defraudara</li>
-                  <li>Si eres un puto rata, es tu abanico</li>
-                </ol>
-                <button class="btn">Dale...</button>
-              </div>
+          <div class="grid-item">  
+            <a class="project-tile" href="#" target="_blank">
+              <img class="project-tile" src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Faulkner/Jpeg%20baja%20resoluci%C3%B3n/20230526_0064.JPG?raw=true" alt="Faulkner">
+            </a>
+            <p class="project-tile-text">Faulkner</p>
+          </div>
             
-              <div class="precio_prod">
-              <div>Abanico de batalla</div>
-              <h4>45€</h4>
-              <ol>
-                <li>Para el uso diario</li>
-                <li>Combina estilo y utilidad</li>
-                <li>...sepas que sigues siendo un puto rata</li>
-              </ol>
-              <button class="btn">Dale...</button>
-              </div>
 
-              <div class="precio_prod">
-              <div>Abanico deLuxe</div>
-              <h4>250€</h4>
-              <ol>
-                <li>La joya de la corona</li>
-                <li>Pintados a mano por artistas consagrados</li>
-                <li>...y una mierda, los compro del chino de abajo por 2 o 3€</li>
-              </ol>
-              <button class="btn">Dale...</button>
-              </div>
+          <div class="grid-item">
+            <a class="project-tile" href="#" target="_blank">
+              <img class="project-tile" src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Paisaje/20221208_0049_ins-2.jpg?raw=true" alt="paisaje">
+            </a>
+            <p class="project-tile-text">Paisaje</p>
+          </div>          
 
-          
+          <div class="grid-item">
+            <a class="project-tile" href="#" target="_blank">
+              <img class="project-tile" src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Paseos/20230603_0002_w.jpg?raw=true" alt="paseos">
+              
+            </a>
+            <p class="project-tile-text">Paseos</p>
           </div>
-      </div>  
-      
-      <div class="separar_precios"></div>
-      
-      <footer>
+
+          <div class="grid-item">
+            <a class="project-tile" href="#" target="_blank">
+              <img class="project-tile" src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/bn%20street/sue%C3%B1o%201.jpg?raw=true" alt="street bn">
+              
+            </a>
+            <p class="project-tile-text">Street</p>
+          </div>
+
+          <div class="grid-item">
+            <a class="project-tile" href="#" target="_blank">
+              <img class="project-tile" src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/color%20street/20170730_0151-167_w.jpg?raw=true" alt="street color">
+            </a>
+            <p class="project-tile-text">Street</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+          <h2>Hi... estoy por aquí...</h2>
+        </div>
+        <div class="contact-links">
+          <ul>
+            <li>
+              <a class="btn-contact-details" href="https://www.facebook.com/josecarlos.zafoncastello" target="_blank">
+                <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a class="btn-contact-details" href="https://www.instagram.com/jczafon" target="_blank">
+                <i class="fa-brands fa-instagram"></i></a>
+            </li> 
+            <li>  
+              <a class="btn-contact-details" id="profile-link" href="https://github.com/zafonote" target="_blank">
+                <i class="fa-brands fa-github"></i></a>
+            </li>
+        </div>    
+      </section>
+
+      <footer id="footer">
         <div class="footer-container">
-          <p>&copy; 2025 <strong>JoseCa </strong>Mi Sitio Web de Abanicos</p>
+          <p>&copy; 2025 <strong>JoseCa </strong><br>Mi Sitio Web de Fotografía</p>
           <nav>
-            <ul>
+            <ul class="footer-list">
               <li><a href="#">Aviso Legal</a></li>
               <li><a href="#">Política de Privacidad</a></li>
               <li><a href="#">Contacto</a></li>
@@ -142,6 +154,7 @@
           </nav>
         </div>
       </footer>
-    </div>  
+    
+    </div>
   </body>
-</html>
+</html
