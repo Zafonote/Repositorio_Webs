@@ -1,0 +1,141 @@
+body {
+  background-color: #eee;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.figura {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible !important;
+}
+
+.image-div {  
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-left: 35px;
+  margin-right: 35px;
+  overflow: hidden;
+}
+
+#img-div {
+  background-image: url(https://m.media-amazon.com/images/I/A1-G9ms5UaL._SL1500_.jpg);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap; 
+  overflow: hidden; 
+}
+
+.image-1 {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+
+.image-2 {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.image-3 {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 100%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.texto {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
+
+.disc-text {
+  display: flex;
+  text-align: left;
+  height: auto;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  
+  width: 500px;
+  height: 5px;
+}  
+
+.time-line {
+  margin-top: 10px;
+}
+
+li {
+  margin-top: 50px;
+  margin-right: 500px;
+  width: 200px;
+  height: auto;
+  text-align: center; 
+  max-width: 600px; 
+  margin-bottom: 10px; 
+}
+
+.disc {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  padding-top: 20px;
+  float: left;
+}
+
+.description {
+  text-align: center;
+}
+
+footer {
+  background-color: whitesmoke;
+  clear: both;  
+  width: 100%;
+  height: 40px;
+  color: rgb(97, 64, 64);
+  margin-left: none;  
+}
+
+#image {
+  max-width: 100%;
+}

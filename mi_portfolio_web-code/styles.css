@@ -1,0 +1,240 @@
+/* Reseteo estilos para que se vea igual en todos los navegadores*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Hace que el tamaño total de un elemento incluya el padding y el borde, evitando que crezca inesperadamente */
+  }
+  
+body {
+    font-family: 'Lora', sans-serif;
+    line-height: 1.6;
+    background: f4f4f4f;
+    color: #666;
+}
+
+.contenedor_web {
+    display: block; /* Lo es por defecto, pero lo pongo para recordar que es block*/
+    /*Afecta a todos los div por debajo: */ 
+    background-color: #f4f6f7;
+}
+
+#header {
+    display: flex;           /* Habilita Flexbox */
+    justify-content: space-between; /* Distribuye los elementos de forma equitativa */
+    align-items: center;          /* Alinea verticalmente los elementos dentro del header en el centro. Esto es útil para asegurar que el logo y los elementos de navegación estén alineados en el mismo eje vertical. */
+    padding: 20px 40px;           /* Espaciado interno */
+    color: #666;                  /* Color del Texto */   
+    background-color: #f4f6f7;  
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.logo {
+    font-size: 8px;
+    font-weight: bold;
+}
+  
+.image_logo {
+    width: 75px;
+    border-radius: 15%;
+}
+
+.navbar {
+  margin-left: 125px;
+}
+
+.nav-list {   /*Podría haber puesto nav ul{} dado que es la unica <ul> que tengo, por ahora*/
+  display: inline-flex;
+  gap: 85px;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none; /* Elimina los estilos predeterminados de lista (como los puntos o números) */
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav a {
+  color: #666;
+  text-decoration: none;
+  font-style: oblique;
+
+}
+
+/* Ahora le toca a la sección .welcome-section*/
+
+#welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh;   Ocuparía toda la pantalla */
+}
+
+.welcome {
+  text-align: center; /* Centra el texto dentro del div, si el div fuera flex usaría justify-content*/
+  
+}
+
+.welcome h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-style: oblique;
+  color: #667;
+  margin-bottom: 25px;
+}
+
+.welcome p {
+  font-size: 0.9rem;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  max-width: 1500px; /* Limita el ancho del contenido*/
+  width: 100%;
+}
+
+#projects {
+  text-align:center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.projects-section h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-style: oblique;
+  color: #667;
+  margin-bottom: 25px;
+}
+  
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  grid-auto-rows: 200px;
+  margin: 25px 25px 100px 25px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.project-tile a {
+  display: block;
+  height: 100%;
+}
+
+.project-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.project-tile:hover img {
+  transform: scale(1.05);
+}
+
+.project-tile-text {
+  position: absolute;
+  bottom: 10px; /* Ajusta la distancia desde abajo */
+  left: 50%;
+  transform: translateX(-30%);
+  font-size: 12px;    
+  background-color: #f4f6f7; 
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #666;
+}
+
+.contact-section-header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-style: oblique;
+  color: #667;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.contact-links ul {
+  display: flex;
+  justify-content: center; 
+  align-items: center;          /* Alinea verticalmente los elementos dentro del header en el centro. Esto es útil para asegurar que el logo y los elementos de navegación estén alineados en el mismo eje vertical. */
+  padding: 10px 60px 40px 60px;           /* Espaciado interno */
+  color: #666;                  /* Color del Texto */   
+  background-color: #f4f6f7;  
+  font-family: 'Roboto', sans-serif;
+  gap: 10px;
+  list-style: none;
+}
+
+.contact-links {
+  
+  
+  
+}
+
+
+
+
+.btn-contact-details {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+i {
+  font-size: 24px;
+  color: #1877F5;
+}
+
+#footer {
+  background-color: #f4f6f7;  
+  font-family: 'Roboto', sans-serif;
+             
+  text-align: center;          /* Alinea los elementos verticalmente al centro */
+  padding: 20px 40px;           /* Espaciado interno */
+  color: #666;
+
+}
+
+.footer-list {
+  display: inline-flex;
+  gap: 85px;
+  justify-content: center;
+  
+  list-style: none; /* Elimina los estilos predeterminados de lista (como los puntos o números) */
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-container p {
+  text-align: left;
+}
+
+  
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Espacio entre elementos */
+    }
+} 
