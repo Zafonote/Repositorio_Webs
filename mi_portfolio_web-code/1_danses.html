@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1_styles.css" />
+    <title>Danses</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Danses</h1>
+      <a href="index.html">Volver</a>  <!-- Enlace para volver a la página principal -->
+    </div>
+    <!-- Galería de fotos del Proyecto 1 -->
+    <div class="galeria_danses">
+      <img src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Danses/20170426_0103-38_w.jpg?raw=true" alt="Foto 1" width="300" onclick="openModal(this)">
+      <img src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Danses/20170426_0103-47_w.jpg?raw=true" alt="Foto 2" width="300" onclick="openModal(this)">
+      <img src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Danses/20170426_0103-50_w.jpg?raw=true" alt="Foto 3" width="300" onclick="openModal(this)">
+      <img src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Danses/2604201720170426_0103-39_w.jpg?raw=true" alt="Foto 4" width="300" onclick="openModal(this)">
+      <img src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Danses/20170426_0103-45_w.jpg?raw=true" alt="Foto 5" width="300" onclick="openModal(this)">
+      <img src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Danses/20170426_0103-56_w.jpg?raw=true" alt="Foto 6" width="300" onclick="openModal(this)">
+      <img src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Danses/20170426_0103-11_w.jpg?raw=true" alt="Foto 7" width="300" onclick="openModal(this)">
+      <img src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Danses/20170426_0103-5_w.jpg?raw=true" alt="Foto 8" width="300" onclick="openModal(this)">
+      <img src="https://github.com/Zafonote/Repositorio_Webs/blob/main/imagenes/mi_portfolio_web-images/Proyecto%20Danses/20170426_0103-33_w.jpg?raw=true" alt="Foto 9" width="300" onclick="openModal(this)">
+        <!-- Añade más imágenes según sea necesario -->
+    </div>
+
+    <!-- Modal para la imagen en grande -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="1_script.js"></script>
+  </body>
+</html>
