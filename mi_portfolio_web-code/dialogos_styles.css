@@ -29,7 +29,7 @@ a {
 }
 .galeria_dialogos {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr)); /*3 columnas en lugar del anterior autofit*/
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /*2 columnas en lugar del anterior autofit*/
     grid-gap: 10px; /* Espaciado entre las fotos */
     width: 90%; /* Aseguramos que no se pase del ancho de la pantalla */
     max-width: 900px; /* Máximo tamaño en píxeles */
