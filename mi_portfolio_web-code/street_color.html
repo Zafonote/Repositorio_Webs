@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="street_color_styles.css" />
+    <title>Street Color</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Street</h1>
+      <a href="index.html">Volver</a>  <!-- Enlace para volver a la página principal -->
+    </div>
+    <!-- Galería de fotos del Proyecto 1 -->
+    <div class="galeria_street_color">
+      <img src="https://lh3.googleusercontent.com/d/1ZbRDiGu6-S1MvCBnMh25PIrBExxv7Gii" alt="Foto 1" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1DjJr-LncKTE_uQhuxrXf32G-FjySqbnO" alt="Foto 2" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/11_d-p54SMutXey5hZJITqaNO1GuYcIWr" alt="Foto 3" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1aOMpc_D8wPh9iUVJxUrOvboDxai3df2P" alt="Foto 4" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1-j7BuwRd3AIRdYfJnuRyMEr6CDefzf1r" alt="Foto 5" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1yU0D7UTwUbDJVhRb7yN1jAJUJdW0lcDW" alt="Foto 6" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1YCHN4DIi8YmYVwF1YDD5gEaOmfT5-DUQ" alt="Foto 7" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1ZiHHTcyDM66h93NEjHtffmVleEKcDtpP" alt="Foto 8" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1hgNxJAEzg5gu2rgOnP6Met5Mr4vFprJT" alt="Foto 9" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1W6gZ5kYJCTjmYKdXeV8_7QUtOgqZoGRc" alt="Foto 10" width="300" onclick="openModal(this)">
+      
+        <!-- Añade más imágenes según sea necesario -->
+    </div>
+
+    <!-- Modal para la imagen en grande -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="1_script.js"></script>
+  </body>
+</html>

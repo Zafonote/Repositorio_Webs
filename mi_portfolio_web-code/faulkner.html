@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faulkner_styles.css" />
+    <title>Faulkner</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Faulkner</h1>
+      <a href="index.html">Volver</a>  <!-- Enlace para volver a la página principal -->
+    </div>
+    <!-- Galería de fotos del Proyecto 1 -->
+    <div class="galeria_faulkner">
+      <img src="https://lh3.googleusercontent.com/d/11hL3OXNjlaG50i4ooASpzewDPjoHidqm" alt="Foto 1" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1DllD32_ex7KCjoSsuxLmkOWi946cOn68" alt="Foto 2" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1KMDi-N_PXbgMPcXU4cz0ojS3GdorLzqC" alt="Foto 3" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1RfzHpufPZDoIIx6kKCLLNZ9-fbJRz4hd" alt="Foto 4" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1T-FMbfKKWnqLm6j2dNVY59kK5YzKmd9o" alt="Foto 5" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1TgKmjJZvt-nRdBOuVRSv6_t6JFL3FY06" alt="Foto 6" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1WdU0dH6vaB7wiQHtUI1GnH9MSwoS1obq" alt="Foto 7" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1dCxolGEU6ph_upZXpjpJsxVlEIQdoZ0Y" alt="Foto 8" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1eckMXakwPvUVejf08OuExc8cVYOEoIDy" alt="Foto 9" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1kdTUCNvws-zAxD6awtGbGrj7L4KItgIS" alt="Foto 10" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1vDegZhpsLrZR8tz6grneSU8ikzPHwVfG" alt="Foto 11" width="300" onclick="openModal(this)">
+      <img src="https://lh3.googleusercontent.com/d/1yvJQaVEuHn3wHEm4BQ7Dw8jaGkqZNGbZ" alt="Foto 12" width="300" onclick="openModal(this)">
+      
+        <!-- Añade más imágenes según sea necesario -->
+    </div>
+
+    <!-- Modal para la imagen en grande -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="1_script.js"></script>
+  </body>
+</html>
