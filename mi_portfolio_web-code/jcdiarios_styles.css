@@ -27,7 +27,7 @@ a {
     text-decoration: none;
     color: #201d1d;
 }
-.galeria_jcDiario {
+.galeria_jcDiarios {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr)); /*3 columnas en lugar del anterior autofit*/
     grid-gap: 50px; /* Espaciado entre las fotos */
@@ -36,7 +36,7 @@ a {
     padding-top: 100px;
 }
 
-.galeria_jcDiario img {
+.galeria_jcDiarios img {
     width: 100%; /* Las imágenes ocupan todo el espacio de su celda */
     height: 100%; /* Mantener la proporción */
     object-fit: cover; /* Asegura que la imagen cubra el área de su celda sin deformarse */
@@ -45,7 +45,7 @@ a {
     transition: transform 0.2s ease-in-out;
 }
 
-.galeria_jcDiario img:hover {
+.galeria_jcDiarios img:hover {
     transform: scale(1.05);
 }
 
