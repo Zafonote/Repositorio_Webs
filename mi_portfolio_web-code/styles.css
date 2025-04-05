@@ -9,7 +9,7 @@
 body {
     font-family: 'Lora', sans-serif;
     line-height: 1.6;
-    background: f4f4f4f;
+    background: #f4f4f4;
     color: #666;
 }
 
@@ -223,10 +223,12 @@ i {
 
   
 @media (max-width: 600px) {
-  header {
+  #header {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    width: 100%; /* Asegura que el header ocupe el ancho completo */
+    box-sizing: border-box;
   }
     nav ul {
         flex-direction: column;
