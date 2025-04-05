@@ -20,12 +20,11 @@ body {
     position: absolute;
     top: 0;
     text-align: center;
-    
 }
 
 a {
     text-decoration: none;
-    color: #201d1d;
+    color: #c7c7c7;
 }
 .galeria_jcDiarios {
     display: grid;
@@ -33,7 +32,7 @@ a {
     grid-gap: 50px; /* Espaciado entre las fotos */
     width: 90%; /* Aseguramos que no se pase del ancho de la pantalla */
     max-width: 900px; /* Máximo tamaño en píxeles */
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .galeria_jcDiarios img {
